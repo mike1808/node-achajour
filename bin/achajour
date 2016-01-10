@@ -14,7 +14,7 @@ function increaseVerbosity(v, total) {
 
 program
   .version(require('../package.json').version)
-  .usage('[options] <voucher>')
+  .usage('achajour [options] <voucher>')
   .description('Application for a login in Achajour')
   .option('-v, --verbose', 'Show additional information', increaseVerbosity, 0)
   .action(function (voucher) {
@@ -30,6 +30,6 @@ if (typeof voucherValue === 'undefined') {
 achajour.login(voucherValue, program.verbose)
   .then(() => console.log('\nEnjoy your time ☕'))
   .catch((err) => {
-    console.error(`\nYour voucher is invalid 😢\n${err}`)
+    console.error(`\nSomething went wrong 😢\n${err}`)
     console.log('\nIf you don\'t want to use a voucher surf only HTTPS websites ;)')
   });
