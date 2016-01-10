@@ -1,4 +1,4 @@
-# achajour-login
+# achajour
 Application for a login in Achajour
 
 ## Requirement
