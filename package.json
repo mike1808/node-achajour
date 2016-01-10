@@ -1,6 +1,6 @@
 {
   "name": "achajour",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Application for a login in Achajour",
   "main": "lib/index.js",
   "scripts": {

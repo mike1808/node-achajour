@@ -22,7 +22,7 @@ achajour 1234567
 ```
 
 ```
-  Usage: login [options] <voucher>
+  Usage: achajour [options] <voucher>
 
   Application for a login in Achajour
 
