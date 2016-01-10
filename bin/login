@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const achajour = require('../lib/index');
+const program = require('commander');
+
+let voucherValue;
+
+function increaseVerbosity(v, total) {
+  return total + 1;
+}
+
+
+program
+  .version('0.0.1')
+  .usage('[options] <voucher>')
+  .description('Application for a login in Achajour')
+  .option('-v, --verbose', 'Show additional information', increaseVerbosity, 0)
+  .action(function (voucher) {
+    voucherValue = voucher;
+  })
+  .parse(process.argv);
+
+if (typeof voucherValue === 'undefined') {
+  console.error('no voucher given!');
+  process.exit(1);
+}
+
+achajour.login(voucherValue, program.verbose)
+  .then(() => console.log('\nEnjoy your time ☕'))
+  .catch((err) => {
+    console.error(`\nYour voucher is invalid 😢\n${err}`)
+    console.log('\nIf you don\'t want to use a voucher surf only HTTPS websites ;)')
+  });
