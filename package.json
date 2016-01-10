@@ -15,5 +15,8 @@
     "es6-promisify": "^3.0.0",
     "jsdom": "^7.2.2",
     "request-promise": "^1.0.2"
+  },
+  "engines": {
+    "node": "^5"
   }
 }
