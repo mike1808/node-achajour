@@ -13,7 +13,15 @@ npm install -g achajour
 
 ## Usage
 
+This tool has only one arguments - the voucher code.
+
+Example:
+
 ```bash
+achajour 1234567
+```
+
+```
   Usage: login [options] <voucher>
 
   Application for a login in Achajour
