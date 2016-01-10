@@ -1,6 +1,6 @@
 {
   "name": "achajour",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Application for a login in Achajour",
   "main": "lib/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": [{
     "name": "Mikael Manukyan"
   }],
+  "url": "https://github.com/mike1808/node-achajour",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
